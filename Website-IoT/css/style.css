@@ -1,0 +1,78 @@
+body {
+    background-color: #c1c1c1;
+    color: #212529;
+}
+
+.chart-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart-box {
+    flex: 1;
+    text-align: center;
+    border: 2px solid #0d6efd;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #0d6efd;
+}
+
+canvas {
+    max-width: 100%;
+    height: 250px !important;
+}
+
+.card {
+    background-color: #ffffff;
+    color: #212529;
+    border-color: #dee2e6;
+}
+
+.card-title {
+    color: #0d6efd;
+}
+
+h3, h5, h6 {
+    color: #212529;
+}
+
+@media (max-width: 768px) {
+    .chart-container {
+        flex-direction: column;
+    }
+
+    .chart-box {
+        margin-bottom: 20px;
+    }
+}
+
+.navbar-nav .nav-link.nav-custom {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link.nav-custom::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link.nav-custom:hover::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link.nav-custom:hover {
+    color: #ffe082;
+}
+
+
